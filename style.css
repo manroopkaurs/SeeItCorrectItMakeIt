@@ -11,57 +11,38 @@ body{
     background-color: #000;
 }
 
-.container{
-  width: 100vw;
-  height: 100vh;
+.logo {
+ display: inline-flex;
+/* left: 0;*/
+ width: 10%;
+ /*padding-right: 20%;*/
 }
 
-header{
-  height: 100px;
-  width: 100vw;
+.logo img {
+width: 100px;
+height: 100px;
 }
-.logo img{
-  width: 100px;
-  height: 100px;
-  z-index: -1;
-}
+
 /*NAVBAR*/
 nav{
-  background-color: #E59866;
+  width: 100vw;
+  height: 100px;
   text-align: center;
-  /*position: fixed;
+  background-color: #000;
+  position: fixed;
   padding: 0 5%;
   z-index: 10;
-  left: 0;
   right: 0;
   top: 0;
-  height: 100px;*/
+  /*padding-right: 12%;*/
 }
-
- .logo {
-  display: flex;
-  float: left;
-  width: 350px;
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  text-align: center;
-}
-
-  .logo img {
-  width: 10%;
-  height: 100%;
-}
-
 
 nav .links {
   display: inline-flex;
   list-style: none;
-
-  /*float: right;
-  width: 50%;
-  height: 100%;
+  width: 80%
+  height: 100px;
+  float: inherit;
   padding: 0;
   margin: 0;
   justify-content: space-around;
@@ -69,22 +50,19 @@ nav .links {
   text-align: center;*/
 }
 
-nav .links li {
-  width: 120px;
-  margin: 15px;
-  padding: 15px;
-
+  nav .links li {
+  margin: 1px;
+  padding: 1px;
 }
 
 nav .links a{
   text-decoration: none;
   color: #fff;
-  /*color: #000;
   display: block;
   padding: 1em;
   font-size: 20px;
   font-weight: bold;
-  transition: all ease 0.5s;*/
+  transition: all ease 0.5s;
 }
 
 nav a:visited {
@@ -94,31 +72,31 @@ nav a:visited {
 nav .links li:hover{
   background-color: #984736;
   border-radius: 3px;
-  /*color: #fff;
   text-decoration: underline;
-  opacity: inherit;*/
+  opacity: inherit;
 }
 
 .dropdown {
   display: none;
 }
 
+
 nav .links li:hover .dropdown{
   display: block;
   position: absolute;
   background-color: red;
-  margin-top: 15px;
-  margin-left: -15px;
+  /*margin-top: 15px;
+  margin-left: -15px;*/
 }
 
 nav .links li:hover .dropdown ul{
   display: block;
-  margin: 10px;
+  /*margin: 10px;*/
 }
 
 nav .links li:hover .dropdown ul li{
-  width: 150px;
-  padding: 10px;
+  /*width: 150px;
+  padding: 10px;*/
   border-bottom: 1px dashed #fff;
   background: transparent;
   border-radius: 0;
@@ -131,6 +109,12 @@ nav .links li:hover .dropdown ul li:last-child{
 
 nav .links li:hover .dropdown ul li a:hover{
   background-color: green;
+}
+
+.button{
+  width: 10%;
+  float: right;
+  display: block;
 }
 
 #nav-toggle {
@@ -154,12 +138,19 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all .3s ease-in-out;
 }
+
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
 /*SHOWCASE*/
 #showcase{
   background-color: #000;
   width: 100vw;
   height: 100vh;
   display: flex;
+  padding-top: 100px;
 }
 
 #showcase .middlebox {
@@ -183,19 +174,24 @@ nav .icon-burger .line {
   height: 100vh;
   background-color: #000;
   font-size: 25px;
-  padding: 30px;
+  padding: 2%;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: inherit;
   text-transform: uppercase;
   justify-content: space-around;
+  align-self: center;
   align-items: center;
+  align-content: center;
   text-align: center;
+  padding-top: 50%;
 }
 #showcase .leftbox{
   left: 0;
   width: 20vw;
   height: 100vh;
+  align-content: center;
+  align-items: center;
 }
 
 #showcase .rightbox{
@@ -203,9 +199,48 @@ nav .icon-burger .line {
   width: 20vw;
   height: 100vh;
 }
+#showcase .rightbox h1{
+  padding-top: 60%;
+}
 
 p{
   color: #fff;
+}
+
+#tot{
+  display: flex;
+}
+#tot h1{
+  color: #fff;
+  width: 15vw;
+  height: 100vh;
+  background-color: #000;
+  font-size: 25px;
+  padding: 2%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 50%;
+}
+#tot .leftbox{
+  width: 33.33vw;
+  height: 100vh;
+}
+
+#tot .middlebox{
+  width: 33.33vw;
+  height: 100vh;
+}
+
+#tot .rightbox{
+  width: 33.33vw;
+  height: 100vh;
 }
 
 
@@ -222,7 +257,7 @@ p{
     overflow-x: hidden;
     overflow-y: scroll;
     line-height: 1.4em;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', sans-serif;
     width: 100vw;
   }
 
@@ -310,14 +345,11 @@ p{
   h1 {
   color: #000;
   font-size: 25px;
-  line-height: 0.5em;
+  line-height: inherit;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: #E59866;
-  border-radius: 50px;
-  border: 35px solid #E59866;
 }
