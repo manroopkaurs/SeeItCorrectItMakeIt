@@ -3,16 +3,17 @@ html{
   overflow-x: hidden;
 }
 body{
-    margin: 0 auto;
+    margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
     line-height: 1.4em;
     font-family: 'Oswald', sans-serif;
+    background-color: #000;
 }
 
 .container{
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 header{
@@ -27,52 +28,109 @@ header{
 /*NAVBAR*/
 nav{
   background-color: #E59866;
-  position: fixed;
+  text-align: center;
+  /*position: fixed;
   padding: 0 5%;
   z-index: 10;
   left: 0;
   right: 0;
   top: 0;
-  height: 100px;
-  width: 100vw;
+  height: 100px;*/
 }
 
-nav .links {
+ .logo {
   display: flex;
-  float: right;
+  float: left;
+  width: 350px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+  .logo img {
+  width: 10%;
+  height: 100%;
+}
+
+
+nav .links {
+  display: inline-flex;
+  list-style: none;
+
+  /*float: right;
   width: 50%;
   height: 100%;
   padding: 0;
   margin: 0;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  text-align: center;*/
 }
 
 nav .links li {
-  list-style: none;
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+
 }
 
-nav a{
-  color: #000;
+nav .links a{
+  text-decoration: none;
+  color: #fff;
+  /*color: #000;
   display: block;
   padding: 1em;
   font-size: 20px;
   font-weight: bold;
-  transition: all ease 0.5s;
-  text-decoration: none;
+  transition: all ease 0.5s;*/
 }
 
 nav a:visited {
   color: #000;
 }
 
-nav a:hover{
-  color: #fff;
-  text-decoration: underline;
+nav .links li:hover{
   background-color: #984736;
-  opacity: inherit;
-  border-radius: 50px;
+  border-radius: 3px;
+  /*color: #fff;
+  text-decoration: underline;
+  opacity: inherit;*/
+}
+
+.dropdown {
+  display: none;
+}
+
+nav .links li:hover .dropdown{
+  display: block;
+  position: absolute;
+  background-color: red;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+nav .links li:hover .dropdown ul{
+  display: block;
+  margin: 10px;
+}
+
+nav .links li:hover .dropdown ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dashed #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+nav .links li:hover .dropdown ul li:last-child{
+  border-bottom: none;
+}
+
+nav .links li:hover .dropdown ul li a:hover{
+  background-color: green;
 }
 
 #nav-toggle {
@@ -97,25 +155,35 @@ nav .icon-burger .line {
   transition: all .3s ease-in-out;
 }
 /*SHOWCASE*/
-#showcase {
-  display: flex;
-  margin: auto;
-  padding-top: 100px;
+#showcase{
+  background-color: #000;
   width: 100vw;
   height: 100vh;
-  background-image: url(https://www.itl.cat/pngfile/big/214-2140785_ielts-student.jpg);
+  display: flex;
+}
+
+#showcase .middlebox {
+  display: flex;
+  margin: auto;
+  /*padding-top: 100px;*/
+  background-image: url("images/showcase.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   justify-content: center;
   align-items: center;
+  width: 60vw;
+  height: 100vh;
 }
 
 #showcase h1 {
-  color: #000;
+  color: #fff;
+  width: 15vw;
+  height: 100vh;
+  background-color: #000;
   font-size: 25px;
-  line-height: inherit;
+  padding: 30px;
   font-weight: bold;
   letter-spacing: 5px;
   line-height: inherit;
@@ -123,4 +191,133 @@ nav .icon-burger .line {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+}
+#showcase .leftbox{
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+}
+
+#showcase .rightbox{
+  right: 0;
+  width: 20vw;
+  height: 100vh;
+}
+
+p{
+  color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+  html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body{
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    line-height: 1.4em;
+    font-family: 'Playfair Display', serif;
+    width: 100vw;
+  }
+
+
+  .logo a {
+  color: #000;
+  font-size: 14px;
+  padding: 0.5em;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+  .logo img {
+  width: 40%;
+  height: 100%;
+}
+
+  .links {
+    float: right;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space evenly;
+    background-color: rgba(0,0,0,8);
+    opacity: 0.75;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+  }
+  nav .links a {
+      font-size: 30px;
+      color: #fff;
+      }
+  nav .links a:hover{
+    color: #fff;
+    text-decoration: 3px underline;
+    background-color: black;
+  }
+
+  nav :checked ~ .links {
+     bottom: 0;
+  }
+  nav .icon-burger {
+      display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1){
+      transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2){
+      opacity: 0;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+.container{
+  width: 100vw;
+  height: inherit;
+}
+
+  /*SHOWCASE*/
+  #showcase {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/showcase.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+  color: #000;
+  font-size: 25px;
+  line-height: 0.5em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #E59866;
+  border-radius: 50px;
+  border: 35px solid #E59866;
 }
