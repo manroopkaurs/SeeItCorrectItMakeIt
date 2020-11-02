@@ -2,6 +2,11 @@ html{
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+*{
+  box-sizing: border-box;
+}
+
 body{
     margin: 0;
     overflow-x: hidden;
@@ -15,17 +20,19 @@ body{
 /*nav{
   display: flex;
   width: 100vw;
-  height: 100px;
-  text-align: center;
+  height: 10vh;
   background-color: #000;
+  /*text-align: center;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   z-index: 10;
   right: 0;
   top: 0;
   margin: 0 auto;
-}
+}*/
 
-.logo {
+/*.logo {
  display: flex;
 width: 20vw;
 }
@@ -146,7 +153,147 @@ nav .buttons li {
   text-decoration: underline;
 }*/
 
+/*.links {
+  background-color: red;
+  text-align: center;
+}*/
 
+/*CODE NEWBIES*/
+nav{
+  display: inline-block;
+  text-align: center;
+position: absolute;
+top: 10%
+left: 50%
+transform: translate(-50%,-50%);
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li:hover{
+  background: #ff553b;
+}
+
+nav
+
+/* EASY TUTORIALS*/
+/*.links ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.links ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.links ul li: focus+ul{
+  visibility: visible;
+}
+
+.links ul li a{
+text-decoration: none;
+color: #fff;
+}
+
+.links ul li a:hover{
+  background: #2bab0d;
+  border-radius: 3px;
+}
+
+.dropdown {
+  display: none;
+}
+
+
+
+.dropdown ul{
+  visibility: hidden;
+}
+
+.links ul li :hover .dropdown{
+  display: block;
+  position: absolute;
+  background: #fff;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.links ul li :hover .dropdown ul{
+  display: block;
+  margin: 10px;
+}
+
+.links ul li :hover .dropdown ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.links ul li :hover .dropdown ul li:last-child{
+border-bottom: none;
+}
+
+.links ul li :hover .dropdown ul li a:hover{
+color: purple;
+}
+
+/*coding nepal*/
+/*nav {
+  margin: 0 auto;
+  height: 60px;
+  background: red;
+}
+
+.logo {
+  padding: 5px 0 0 50px;
+  width: 150px;
+  height: auto;
+}
+
+.links ul li{
+  background:  #2c3e50;
+  position: relative;
+  list-style: none;
+  display: inline-flex;
+}
+
+.links ul li a{
+  display: block;
+  padding: 0 15px;
+  color:#fff;
+  text-decoration: none;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+nav ul li a:hover{
+  background: #243342;
+}
+
+.dropdown ul{
+  position: absolute;
+  top: 60px;
+  display: none;
+}
+
+nav ul li:hover > ul{
+  display: block;
+}
+
+.dropdown ul li{
+  width: 150px;
+  float: none;
+  display: list-item;
+  position: relative;
+}*/
 
 #nav-toggle {
   position: absolute;
@@ -199,6 +346,7 @@ nav .rightbox{
 .container{
   width: 100vw;
   height: 100vh;
+  color: #fff;
 }
 
 /*SHOWCASE*/
@@ -323,11 +471,12 @@ p{
 #tot .rightbox h1{
   color: #d90166;
 }
+
 /*INFO*/
-#info{
+#info .line{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   text-align: center;
   align-items: center;
   align-content: center;
@@ -338,8 +487,6 @@ p{
   width: 40vw;
   height: 50vh;
   background-color: #fff;
-  border: 3px solid #fff;
-  border-radius: 500px;
   margin-left:5vw;
   margin-right: 5vw;
 }
@@ -348,15 +495,24 @@ p{
   width: 40vw;
   height: 50vh;
   background-color: #fff;
-  border: 3px solid #fff;
-  border-radius: 500px;
   margin-left:5vw;
   margin-right: 5vw;
 }
-
 #info h1{
+  color: #fff;
+  width: 100vw;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#info .line h1{
   color: #000;
-  width: 50vw;
+  width: 40vw;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -369,7 +525,7 @@ p{
 
 #info p{
   color: #000;
-  width: 50vw;
+  width: 40vw;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: inherit;
@@ -378,6 +534,123 @@ p{
   align-content: center;
   text-align: center;
 }
+
+/*DEGREES*/
+#degree{
+  width: 70vw;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+#degree h1, h3{
+  color: #fff;
+  width: 100vw;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#degree h4{
+  font-size: 24px;
+  color: #000;
+}
+#degree a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  line-height: inherit;
+}
+
+#degree a:hover{
+  text-decoration: underline;
+}
+
+#degree ul, li{
+  text-decoration: none;
+  list-style: none;
+}
+
+#degree .lineone{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center; /*horizontal alignment*/
+  align-items: center; /*vertical alignment*/
+  text-align: center;
+  background-color: #fff;
+}
+
+#degree .lineto{
+  width: 100vw;
+  height: 30vh;
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center; /*horizontal alignment*/
+  align-items: center; /*vertical alignment*/
+  text-align: center;
+  background-color: #fff;
+}
+
+#degree  .leftbox{
+  width: 33.33vw;
+/*  background-color: red;*/
+
+}
+
+#degree  .middlebox{
+  width: 33.33vw;
+  /*  background-color: blue;*/
+}
+
+#degree  .rightbox{
+  width: 33.33vw;
+/*  background-color: green;*/
+}
+/*NEWS*/
+#news h1{
+  color: #fff;
+  width: 100vw;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+/*FOOTER*/
+footer{
+  background: #333;
+  color: #fff;
+  text-align: center;
+  /*padding: 20px;
+  margin-top: 20px;*/
+}
+footer a{
+  color: #fff;
+}
+footer a:visited{
+  color: #fff;
+}
+.footlink a{
+  padding: 0 25px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footlink a:hover{
+  text-decoration: 2px underline;
+}
+
+
 
 @media screen and (max-width: 800px){
   html{
