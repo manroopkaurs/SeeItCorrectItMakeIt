@@ -11,11 +11,23 @@ body{
     background-color: #000;
 }
 
+/*NAVBAR*/
+/*nav{
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  background-color: #000;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+}
+
 .logo {
- display: inline-flex;
-/* left: 0;*/
- width: 10%;
- /*padding-right: 20%;*/
+ display: flex;
+width: 20vw;
 }
 
 .logo img {
@@ -23,34 +35,20 @@ width: 100px;
 height: 100px;
 }
 
-/*NAVBAR*/
-nav{
-  width: 100vw;
-  height: 100px;
-  text-align: center;
-  background-color: #000;
-  position: fixed;
-  padding: 0 5%;
-  z-index: 10;
-  right: 0;
-  top: 0;
-  /*padding-right: 12%;*/
-}
-
 nav .links {
-  display: inline-flex;
+  display: flex;
   list-style: none;
-  width: 80%
+  width: 60vw;
   height: 100px;
-  float: inherit;
+  float: right;
   padding: 0;
   margin: 0;
   justify-content: space-around;
   align-items: center;
-  text-align: center;*/
+  text-align: center;
 }
 
-  nav .links li {
+nav .links li {
   margin: 1px;
   padding: 1px;
 }
@@ -59,44 +57,37 @@ nav .links a{
   text-decoration: none;
   color: #fff;
   display: block;
-  padding: 1em;
   font-size: 20px;
   font-weight: bold;
   transition: all ease 0.5s;
 }
 
 nav a:visited {
-  color: #000;
+  color: #fff;
 }
 
 nav .links li:hover{
   background-color: #984736;
   border-radius: 3px;
   text-decoration: underline;
-  opacity: inherit;
 }
 
 .dropdown {
   display: none;
 }
 
-
 nav .links li:hover .dropdown{
   display: block;
   position: absolute;
   background-color: red;
-  /*margin-top: 15px;
-  margin-left: -15px;*/
+
 }
 
 nav .links li:hover .dropdown ul{
   display: block;
-  /*margin: 10px;*/
 }
 
 nav .links li:hover .dropdown ul li{
-  /*width: 150px;
-  padding: 10px;*/
   border-bottom: 1px dashed #fff;
   background: transparent;
   border-radius: 0;
@@ -111,11 +102,51 @@ nav .links li:hover .dropdown ul li a:hover{
   background-color: green;
 }
 
-.button{
-  width: 10%;
-  float: right;
-  display: block;
+.buttons {
+  display: flex;
+  list-style: none;
+  width: 20vw;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
+
+nav .buttons li {
+  list-style: none;
+
+  margin: 1px;
+  padding: 1px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+
+.buttons a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all ease 0.5s;
+}
+
+.buttons a:visited {
+  color: #fff;
+}
+
+.buttons li:hover{
+  background-color: #984736;
+  border-radius: 3px;
+  text-decoration: underline;
+}*/
+
+
 
 #nav-toggle {
   position: absolute;
@@ -138,7 +169,33 @@ nav .icon-burger .line {
   border-radius: 3px;
   transition: all .3s ease-in-out;
 }
+nav .leftbox{
+  left: 0;
+  width: 20vw;
+  height: 100px;
+  background-color: #fff;
+  text-align: center;
+  align-self: center;
+}
 
+nav .middlebox{
+  width: 60vw;
+  height: 100px;
+  background-color: red;
+  padding-right: -15px;
+  padding-left: 30px;
+}
+
+nav .rightbox{
+  right: 0;
+  width: 20vw;
+  height: 100px;
+  background-color: blue;
+  color: #fff;
+}
+.extra{
+  display: none;
+}
 .container{
   width: 100vw;
   height: 100vh;
@@ -153,6 +210,13 @@ nav .icon-burger .line {
   padding-top: 100px;
 }
 
+#showcase .leftbox{
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+}
 #showcase .middlebox {
   display: flex;
   margin: auto;
@@ -168,6 +232,11 @@ nav .icon-burger .line {
   height: 100vh;
 }
 
+#showcase .rightbox{
+  right: 0;
+  width: 20vw;
+  height: 100vh;
+}
 #showcase h1 {
   color: #fff;
   width: 15vw;
@@ -186,19 +255,6 @@ nav .icon-burger .line {
   text-align: center;
   padding-top: 50%;
 }
-#showcase .leftbox{
-  left: 0;
-  width: 20vw;
-  height: 100vh;
-  align-content: center;
-  align-items: center;
-}
-
-#showcase .rightbox{
-  right: 0;
-  width: 20vw;
-  height: 100vh;
-}
 #showcase .rightbox h1{
   padding-top: 60%;
 }
@@ -206,45 +262,122 @@ nav .icon-burger .line {
 p{
   color: #fff;
 }
-
+/*THING OUTSIDE THE...*/
 #tot{
+  width: 100vw;
+  height: 75vh;
+}
+#tot .topbox{
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  color: white;
+  top: 0;
+  margin-top: 10%;
+}
+#tot .topbox h1{
+  font-size: 45px;
+  text-decoration: 3px underline;
+  text-decoration-color: #fff;
+}
+#toto{
   display: flex;
 }
-#tot h1{
+#toto h1{
   color: #fff;
-  width: 15vw;
-  height: 100vh;
-  background-color: #000;
-  font-size: 25px;
-  padding: 2%;
+  width: 33.33vw;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: inherit;
-  text-transform: uppercase;
-  justify-content: space-around;
   align-self: center;
   align-items: center;
   align-content: center;
   text-align: center;
-  padding-top: 50%;
 }
+
 #tot .leftbox{
   width: 33.33vw;
-  height: 100vh;
+  height: 12vh;
+  background-color: #fff;
 }
 
 #tot .middlebox{
   width: 33.33vw;
-  height: 100vh;
+  height: 12vh;
+  background-color: #fff;
 }
 
 #tot .rightbox{
   width: 33.33vw;
-  height: 100vh;
+  height: 12vh;
+  background-color: #fff;
 }
 
+#tot .leftbox h1{
+  color: #ed7117;
+}
+#tot .middlebox h1{
+  color: #003297;
+}
+#tot .rightbox h1{
+  color: #d90166;
+}
+/*INFO*/
+#info{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  /*background-color: orange;*/
+}
+#info .leftbox{
+  width: 40vw;
+  height: 50vh;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 500px;
+  margin-left:5vw;
+  margin-right: 5vw;
+}
 
+#info .rightbox{
+  width: 40vw;
+  height: 50vh;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 500px;
+  margin-left:5vw;
+  margin-right: 5vw;
+}
 
+#info h1{
+  color: #000;
+  width: 50vw;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+#info p{
+  color: #000;
+  width: 50vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
 
 @media screen and (max-width: 800px){
   html{
@@ -295,6 +428,7 @@ p{
     transition: all .5s ease-in-out;
 
   }
+
   nav .links a {
       font-size: 30px;
       color: #fff;
@@ -320,11 +454,18 @@ p{
   nav :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
+  .extra{
+    display: block;
+  }
+nav .buttons{
+  display: none;
+}
 
 .container{
   width: 100vw;
   height: inherit;
 }
+
 
   /*SHOWCASE*/
   #showcase {
