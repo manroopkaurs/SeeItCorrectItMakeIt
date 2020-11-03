@@ -10,7 +10,6 @@ html{
 body{
     margin: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
     line-height: 1.4em;
     font-family: 'Oswald', sans-serif;
     background-color: #000;
@@ -33,15 +32,16 @@ nav{
 
 nav .leftbox{
   display: flex;
-  width: 10vw;
+  width: 20vw;
   height: 100px;
   background-color: green;
+  justify-content: center;
+  align-items: center;
 }
 
 .leftbox img {
-width: 100px;
-height: 100px;
-padding-left: 5px;
+width: 90px;
+height: 90px;
 }
 
 nav .middlebox{
@@ -54,19 +54,23 @@ nav .middlebox{
 }
 
 .links {
+  background-color: purple;
   display: flex;
 }
 
 .links li {
+  /*background-color: purple;*/
   float: left;
+  padding: 0 50px;
   list-style: none;
   position: relative;
 }
 
 .links li a{
+  /*background-color: grey;*/
+  font-size: 20px;
   color: #fff;
   display: block;
-  padding: 0 50px;
   text-decoration: none;
 }
 
@@ -74,27 +78,35 @@ nav .middlebox{
   color: #fff;
 }
 
-.dropdown{
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  /*padding: 10px;*/
-  border-radius: 0 0 4px 4px ;
+.links li:hover .dropdown{
+  display: block;
 }
 
-.links li:hover .dropdown{
-  display: inline-flex;
+.dropdown{
+  background-color: hotpink;
+  display: none;
+  position: absolute;
+/*  background-color: #fff;*/
+  width: 135px;
+  border-radius: 0 0 4px 4px;
 }
 
 .dropdown li{
-  left: 0;
-  width: 150px;
+  display: block;
   border-radius: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+
 }
 
 .dropdown li a{
+  color: #fff;
+  word-spacing: 5px;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
   color: #000;
-  /*padding: 8px 14px;*/
+
 }
 
 .dropdown li a:hover{
@@ -106,7 +118,7 @@ background: #fff;
 }
 
 nav .rightbox{
-  width: 30vw;
+  width: 20vw;
   height: 100px;
   background-color: blue;
   display: flex;
@@ -114,49 +126,26 @@ nav .rightbox{
   align-items: center;
 }
 
-/*.buttons {
+.buttons {
   display: flex;
-  list-style: none;
-  width: 20vw;
-  height: 100px;
-  padding: 0;
-  margin: 0;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
 }
 
-nav .buttons li {
+.buttons li {
+  float: left;
   list-style: none;
+  position: relative;
+}
 
-  margin: 1px;
-  padding: 1px;
-  text-decoration: none;
+.buttons li a{
   color: #fff;
   display: block;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all ease 0.5s;
-}
-
-.buttons a{
+  padding: 0 25px;
   text-decoration: none;
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all ease 0.5s;
 }
 
-.buttons a:visited {
+.buttons li a:visited{
   color: #fff;
 }
-
-.buttons li:hover{
-  background-color: #984736;
-  border-radius: 3px;
-  text-decoration: underline;
-}*/
 
 
 #nav-toggle {
@@ -194,7 +183,7 @@ nav .icon-burger .line {
 #showcase{
   background-color: #000;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   padding-top: 100px;
 }
@@ -254,7 +243,7 @@ p{
 /*THING OUTSIDE THE...*/
 #tot{
   width: 100vw;
-  height: 75vh;
+  height: 90vh;
 }
 #tot .topbox{
   width: 100vw;
@@ -262,7 +251,7 @@ p{
   text-align: center;
   color: white;
   top: 0;
-  margin-top: 10%;
+  margin-top: 50vh;
 }
 #tot .topbox h1{
   font-size: 45px;
@@ -271,6 +260,7 @@ p{
 }
 #toto{
   display: flex;
+  padding-top: 5%;
 }
 #toto h1{
   color: #fff;
@@ -314,6 +304,9 @@ p{
 }
 
 /*INFO*/
+#info{
+  height: 90vh;
+}
 #info .line{
   display: flex;
   width: 100vw;
@@ -322,7 +315,7 @@ p{
   align-items: center;
   align-content: center;
   align-self: center;
-  /*background-color: orange;*/
+  padding-top: 15%;
 }
 #info .leftbox{
   width: 40vw;
@@ -330,6 +323,7 @@ p{
   background-color: #fff;
   margin-left:5vw;
   margin-right: 5vw;
+  padding-top: 2%;
 }
 
 #info .rightbox{
@@ -338,11 +332,14 @@ p{
   background-color: #fff;
   margin-left:5vw;
   margin-right: 5vw;
+  padding-top: 2%;
 }
 #info h1{
   color: #fff;
   width: 100vw;
-  font-size: 50px;
+  font-size: 45px;
+  text-decoration: 3px underline;
+  text-decoration-color: #fff;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: inherit;
@@ -379,18 +376,33 @@ p{
 /*DEGREES*/
 #degree{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   right: 0;
   left: 0;
   text-align: center;
-
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#degree h1, h3{
+#degree h1{
   color: #fff;
   width: 100vw;
-  font-size: 50px;
+  font-size: 45px;
+  text-decoration: 3px underline;
+  text-decoration-color: #fff;
   font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#degree h3{
+  color: #fff;
+  width: 100vw;
+  font-size: 40px;
+  font-weight: lighter;
   letter-spacing: 2px;
   line-height: inherit;
   align-self: center;
@@ -422,7 +434,7 @@ p{
 
 #degree .lineone{
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,7 +444,7 @@ p{
 
 #degree .lineto{
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   margin-top: 10vh;
   display: flex;
   justify-content: center;
@@ -457,33 +469,43 @@ p{
 #updates{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  text-align: center;
 }
 #annon{
   width: 50vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #news{
   width: 50vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #updates .annoninfo{
-  width: 40vw;
-  height: 50vh;
+  width: 30vw;
+  height: 55vh;
   background-color: #fff;
-  margin-left:5vw;
+  margin-left:10vw;
   margin-right: 5vw;
+  justify-content: center;
+  align-items: center;
 }
 
 #updates .newsinfo{
-  width: 40vw;
-  height: 50vh;
+  width: 30vw;
+  height: 55vh;
   background-color: #fff;
   margin-left:5vw;
-  margin-right: 5vw;
+  margin-right: 10vw;
 }
-#updates h1{
+
+#updates #annon h1{
   color: #fff;
   width: 50vw;
-  font-size: 50px;
+  font-size: 45px;
+  text-decoration: 3px underline;
+  text-decoration-color: #fff;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: inherit;
@@ -491,6 +513,35 @@ p{
   align-items: center;
   align-content: center;
   text-align: center;
+}
+#updates #news h1{
+  color: #fff;
+  width: 40vw;
+  font-size: 45px;
+  text-decoration: 3px underline;
+  text-decoration-color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: inherit;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#updates p{
+  color: #000;
+}
+#updates a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+#updates a:hover{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+#updates a:visited{
+  color: #000;
 }
 
 /*FOOTER*/
