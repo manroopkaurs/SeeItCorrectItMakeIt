@@ -170,6 +170,7 @@ transform: translate(-50%,-50%);
 
 .links ul{
   list-style: none;
+  position: relative;
 }
 
 .links li:hover{
@@ -200,7 +201,9 @@ transform: translate(-50%,-50%);
 }
 
 .dropdown{
+  display: block;
   position: absolute;
+  background-color: #fff;
   top: 100%
   left: 0;
   width: 100%
