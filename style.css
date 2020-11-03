@@ -34,7 +34,6 @@ nav .leftbox{
   display: flex;
   width: 20vw;
   height: 100px;
-  background-color: green;
   justify-content: center;
   align-items: center;
 }
@@ -47,14 +46,12 @@ height: 90px;
 nav .middlebox{
   width: 60vw;
   height: 100px;
-  background-color: red;
   display: flex;
   justify-content: center; /*horizontal alignment*/
   align-items: center;
 }
 
 .links {
-  background-color: purple;
   display: flex;
 }
 
@@ -80,15 +77,26 @@ nav .middlebox{
 
 .links li:hover .dropdown{
   display: block;
+  justify-content: space-around;
 }
 
+.about{
+  width: 80px;
+}
+.imp{
+  width: 107px;
+  left: 0;
+}
+.event{
+  width: 80px;
+}
 .dropdown{
-  background-color: hotpink;
   display: none;
   position: absolute;
-/*  background-color: #fff;*/
+  background-color: #fff;
   width: 135px;
   border-radius: 0 0 4px 4px;
+  justify-content: space-around;
 }
 
 .dropdown li{
@@ -96,21 +104,19 @@ nav .middlebox{
   border-radius: 4px;
   padding-left: 0px;
   padding-right: 0px;
-
 }
 
 .dropdown li a{
   color: #fff;
-  word-spacing: 5px;
   font-size: 16px;
   display: block;
   text-decoration: none;
   color: #000;
-
+  line-height: 1.5em;
 }
 
 .dropdown li a:hover{
-background: #fff;
+text-decoration: underline;
 }
 
 .dropdown li a:visited{
@@ -120,7 +126,6 @@ background: #fff;
 nav .rightbox{
   width: 20vw;
   height: 100px;
-  background-color: blue;
   display: flex;
   justify-content: center; /*horizontal alignment*/
   align-items: center;
@@ -141,6 +146,7 @@ nav .rightbox{
   display: block;
   padding: 0 25px;
   text-decoration: none;
+    background-color: red;
 }
 
 .buttons li a:visited{
