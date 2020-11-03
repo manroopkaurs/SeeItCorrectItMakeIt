@@ -152,13 +152,25 @@ nav .rightbox{
   font-family: 'Oswald', sans-serif;
 }
 
-
 .buttons li a:visited{
   color: #000;
 }
 
+label #sign-one, label#sign-two{
+  font-size: 30px
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
 
-#nav-toggle {
+#res-menu{
+  display: none;
+}
+
+/*#nav-toggle {
   position: absolute;
   top: -100px;
 }
@@ -178,7 +190,7 @@ nav .icon-burger .line {
   margin: 5px;
   border-radius: 3px;
   transition: all .3s ease-in-out;
-}
+}*/
 
 .container{
   width: 100vw;
@@ -629,29 +641,51 @@ footer p{
   height: 100%;
 }
 
-.middlebox .links {
-    float: none;
+label #sign-one{
+  display: block;
+
+}
+    .links {
+    /*float: none;*/
     position: fixed;
-    z-index: 9;
-    left: 0;
-    right: 0;
-    top: 60px;
+    width: 100%;
+    height: 100vh
+    background-color: rgba(0,0,0,8);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    z-index: 10;
+    /*right: 0;
     bottom: 100%;
-    width: auto;
-    height: auto;
     flex-direction: column;
     justify content: space evenly;
-    background-color: rgba(0,0,0,8);
     opacity: 0.75;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
+    overflow: hidden;*/
+}
 
+.links li{
+  display: block;
+  margin: 40px 0;
+  line-height: 30px;
 }
 .links a {
     font-size: 20px;
     }
 
-nav :checked ~ .middlebox .links {
+#res-menu:checked ~ .links{
+  left: 0;
+}
+
+#res-menu:checked ~ label #sign-one{
+  display: none;
+}
+
+#res-menu:checked ~ label #sign-two{
+  display: block;
+}
+
+/*nav :checked ~ .middlebox .links {
    bottom: 0;
 }
 
@@ -668,7 +702,7 @@ nav :checked ~ .icon-burger .line:nth-child(3){
 }
 
 nav :checked ~ .icon-burger .line:nth-child(2){
-    opacity: 0;
+    opacity: 0;*/
 }
 
 .dropdown{
