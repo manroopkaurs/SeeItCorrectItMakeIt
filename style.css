@@ -1157,13 +1157,14 @@ footer p{
   text-decoration: none;
   line-height: inherit;
 }
-/*  width: 100vw;
-  height: 10vh;
+.footlink .leftbox{
+ width: 100vw;
+  height: 15vh;
 }
 .footlink .rightbox{
   width: 100vw;
-  height: 2vh;
-}*/
+  height: 15vh;
+}
 
 .footlink a:hover{
   text-decoration: 2px underline;
