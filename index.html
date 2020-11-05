@@ -4,127 +4,136 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootdtrapcdn.com/font-awsome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>University of Advancing Technology</title>
     <link rel="icon" type="image/png" href=images/uat2-logo.png>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
   </head>
   <body>
 
     <nav>
-          <input type="checkbox" id="res-menu">
-          <label for="res-menu">
-              <i class="fa fa-bars" id="sign-one"></i>
-              <i class="fa fa-times" id="sign-two"></i>
-          </label>
 
           <div class="leftbox">
-                  <a href="#showcase"> <img src="images/uat2-logo.png" alt="UAT Logo"> </a>
+              <a href="#showcase"> <img src="images/uat2-logo.png" alt="UAT Logo"> </a>
           </div>
 
+          <label for="drop" class="toggle" id='main-toggle'>
+            <span class="nav-icon"></span>
+          </label>
+          <input type="checkbox" id="drop">
+
           <div class="middlebox">
-            <div class="links">
-                <ul style="padding-left: 0px;">
-                    <li> <a href="#degree">Degrees</a>
-                      <div class="dropdown">
-                        <ul style="padding-left: 0px;">
-                          <li> <a href="https://www.uat.edu/advancing-technology-degrees" target="_blank">View all degrees</a> </li>
-                          <li> <a href="#degree">Business & Innovation</a> </li>
-                          <li> <a href="#degree">Creation & Simulation</a> </li>
-                          <li> <a href="#degree">Cyber Security</a> </li>
-                          <li> <a href="#degree">Digital Arts</a> </li>
-                          <li> <a href="#degree">Game Studies</a> </li>
-                          <li> <a href="#degree">Software Engineering</a> </li>
+          <ul class="links">
+                  <li>
+                    <label for="drop-1" class="toggle">Degree +</label>
+                    <a href=" ">Degree</a>
+                    <input type="checkbox" id="drop-1">
+                          <ul class="dropdown">
+                              <li> <a href="https://www.uat.edu/advancing-technology-degrees" target="_blank">View all degrees</a> </li>
+                              <li> <a href="#degree">Business & Innovation</a> </li>
+                              <li> <a href="#degree">Creation & Simulation</a> </li>
+                              <li> <a href="#degree">Cyber Security</a> </li>
+                              <li> <a href="#degree">Digital Arts</a> </li>
+                              <li> <a href="#degree">Game Studies</a> </li>
+                              <li> <a href="#degree">Software Engineering</a> </li>
+                          </ul>
+                  </li>
+
+
+                  <li>
+                    <label for="drop-2" class="toggle">Admisson +</label>
+                    <a href=" ">Admisson</a>
+                    <input type="checkbox" id="drop-2">
+
+                    <ul class="dropdown">
+                              <li> <a href="https://www.uat.edu/academic-calendar" target="_blank"> Academic Calendar </a> </li>
+                              <li> <a href="https://www.uat.edu/featured-technology-university-alumni" target="_blank"> Featured Alumni </a> </li>
+                              <li> <a href="https://www.uat.edu/private-consultation#admission-requirements" target="_blank"> How To Apply </a> </li>
+                              <li> <a href="https://www.uat.edu/see-technology-college" target="_blank"> See The Campus </a> </li>
+                              <li> <a href="https://www.uat.edu/major-disclosures" target="_blank"> Student Consumer Info </a> </li>
+                              <li> <a href="https://www.uat.edu/military" target="_blank"> Military </a> </li>
+                              <li> <a href="https://www.uat.edu/private-consultation" target="_blank"> Private Consultation </a> </li>
+                              <li> <a href="https://www.uat.edu/private-consultation#transfers" target="_blank"> Transfer Credits </a> </li>
+                              <li> <a href="https://www.uat.edu/uatx" target="_blank"> UATX Open House</a> </li>
+                              <li> <a href="https://www.uat.edu/tuition" target="_blank"> Tuition</a> </li>
+                          </ul>
+                  </li>
+
+
+                  <li>
+                    <label for="drop-3" class="toggle">Academics +</label>
+                    <a href=" ">Academics</a>
+                    <input type="checkbox" id="drop-3">
+                    <ul class="dropdown">
+                              <li> <a href="https://www.uat.edu/uat-online"target="_blank">UAT Online</a> </li>
+                              <li> <a href="https://www.uat.edu/uat-catalogs"target="_blank">Academic Catalog</a> </li>
+                              <li> <a href="https://www.uat.edu/featured-technology-university-faculty"target="_blank">Featured Faculty</a> </li>
+                              <li> <a href="https://www.uat.edu/general-education"target="_blank">General Education</a> </li>
+                              <li> <a href="https://www.uat.edu/honors-program"target="_blank">Honors Program</a> </li>
+                              <li> <a href="https://www.uat.edu/student-innovation-projects"target="_blank">Student Innovation</a> </li>
+                              <li> <a href="https://www.uat.edu/synchronic-learning"target="_blank">Synchronic Learning</a> </li>
+                              <li> <a href="https://www.uat.edu/wall-of-app-fame"target="_blank">Wall Of App Fame</a> </li>
+                          </ul>
+                  </li>
+
+
+                  <li>
+                    <label for="drop-4" class="toggle">Student Experience +</label>
+                    <a href=" ">Student Experience</a>
+                    <input type="checkbox" id="drop-4">
+                    <ul class="dropdown">
+                              <li> <a href="https://www.uat.edu/publications"target="_blank">Publications</a> </li>
+                              <li> <a href="https://blog.uat.edu/"target="_blank">Student Blog</a> </li>
+                              <li> <a href="https://www.uat.edu/commencement"target="_blank">Commencement</a> </li>
+                              <li> <a href="https://www.uat.edu/internships"target="_blank">Internships</a> </li>
+                              <li> <a href="https://www.uat.edu/student-housing" target="_blank">Student Housing</a> </li>
+                              <li> <a href="https://www.flickr.com/photos/uat/collections/"target="_blank">Photo Gallery</a> </li>
+                          </ul>
+                  </li>
+
+
+                  <li>
+                    <label for="drop-5" class="toggle">About UAT +</label>
+                    <a href=" ">About UAT</a>
+                    <input type="checkbox" id="drop-5">
+                    <ul class="dropdown">
+                              <li> <a href="https://www.uat.edu/about-uat">About UAT</a> </li>
+                              <li> <a href="https://www.uat.edu/university-of-advancing-technology-at-a-glance#accreditation-info" target="_blank">Accreditation</a> </li>
+                              <li> <a href="https://www.uat.edu/university-of-advancing-technology-at-a-glance"target="_blank">At A Glance</a> </li>
+                              <li> <a href="https://www.uat.edu/featured-technology-university-staff"target="_blank">Featured Staff</a> </li>
+                              <li> <a href="https://www.uat.edu/about-uat"target="_blank">History</a> </li>
+                              <li> <a href="https://www.uat.edu/campus-information"target="_blank" class="imp">Important Numbers</a> </li>
+                              <li> <a href="https://www.uat.edu/technology-university-mission"target="_blank">Mission</a> </li>
+                              <li> <a href="https://www.uat.edu/why-uat" target="_blank">Why UAT</a> </li>
+                          </ul>
+                  </li>
+
+
+                  <li>
+                    <label for="drop-6" class="toggle">News & Events +</label>
+                    <a href=" ">News & Events</a>
+                    <input type="checkbox" id="drop-6">
+                    <ul class="dropdown">
+                            <li> <a href="https://www.uat.edu/events"target="_blank">Events</a> </li>
+                            <li> <a href="https://www.uat.edu/connect-with-uat"target="_blank">Social Feeds</a> </li>
+                            <li> <a href="https://www.uattech.com/" target="_blank">UAT Tech Blog</a> </li>
+                            <li> <a href="https://www.uat.edu/campus-news-feed"target="_blank">Press</a> </li>
                         </ul>
-                      </div>
-                    </li>
-
-                    <li> <a href="#">Admissions</a>
-                     <div class="dropdown">
-                        <ul style="padding-left: 0px;">
-                          <li> <a href="https://www.uat.edu/academic-calendar" target="_blank"> Academic Calendar </a> </li>
-                          <li> <a href="https://www.uat.edu/featured-technology-university-alumni" target="_blank"> Featured Alumni </a> </li>
-                          <li> <a href="https://www.uat.edu/private-consultation#admission-requirements" target="_blank"> How To Apply </a> </li>
-                          <li> <a href="https://www.uat.edu/see-technology-college" target="_blank"> See The Campus </a> </li>
-                          <li> <a href="https://www.uat.edu/major-disclosures" target="_blank"> Student Consumer Info </a> </li>
-                          <li> <a href="https://www.uat.edu/military" target="_blank"> Military </a> </li>
-                          <li> <a href="https://www.uat.edu/private-consultation" target="_blank"> Private Consultation </a> </li>
-                          <li> <a href="https://www.uat.edu/private-consultation#transfers" target="_blank"> Transfer Credits </a> </li>
-                          <li> <a href="https://www.uat.edu/uatx" target="_blank"> UATX Open House</a> </li>
-                          <li> <a href="https://www.uat.edu/tuition" target="_blank"> Tuition</a> </li>
-
-                        </ul>
-                      </div>
-                    </li>
-
-                    <li> <a href="#academics">Academics</a>
-                       <div class="dropdown">
-                          <ul style="padding-left: 0px;">
-                            <li> <a href="https://www.uat.edu/uat-online"target="_blank">UAT Online</a> </li>
-                            <li> <a href="https://www.uat.edu/uat-catalogs"target="_blank">Academic Catalog</a> </li>
-                            <li> <a href="https://www.uat.edu/featured-technology-university-faculty"target="_blank">Featured Faculty</a> </li>
-                            <li> <a href="https://www.uat.edu/general-education"target="_blank">General Education</a> </li>
-                            <li> <a href="https://www.uat.edu/honors-program"target="_blank">Honors Program</a> </li>
-                            <li> <a href="https://www.uat.edu/student-innovation-projects"target="_blank">Student Innovation</a> </li>
-                            <li> <a href="https://www.uat.edu/synchronic-learning"target="_blank">Synchronic Learning</a> </li>
-                            <li> <a href="https://www.uat.edu/wall-of-app-fame"target="_blank">Wall Of App Fame</a> </li>
-                          </ul>
-                        </div>
-                    </li>
-
-                    <li> <a href="#">Student Experience</a>
-                      <div class="dropdown">
-                          <ul style="padding-left: 0px;">
-                            <li> <a href="https://www.uat.edu/publications"target="_blank">Publications</a> </li>
-                            <li> <a href="https://blog.uat.edu/"target="_blank">Student Blog</a> </li>
-                            <li> <a href="https://www.uat.edu/commencement"target="_blank">Commencement</a> </li>
-                            <li> <a href="https://www.uat.edu/internships"target="_blank">Internships</a> </li>
-                            <li> <a href="https://www.uat.edu/student-housing" target="_blank">Student Housing</a> </li>
-                            <li> <a href="https://www.flickr.com/photos/uat/collections/"target="_blank">Photo Gallery</a> </li>
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li> <a href="#about">About UAT</a>
-                      <div class="dropdown">
-                          <ul class="about" style="padding-left: 0px;">
-                            <li> <a href="https://www.uat.edu/about-uat">About UAT</a> </li>
-                            <li> <a href="https://www.uat.edu/university-of-advancing-technology-at-a-glance#accreditation-info" target="_blank">Accreditation</a> </li>
-                            <li> <a href="https://www.uat.edu/university-of-advancing-technology-at-a-glance"target="_blank">At A Glance</a> </li>
-                            <li> <a href="https://www.uat.edu/featured-technology-university-staff"target="_blank">Featured Staff</a> </li>
-                            <li> <a href="https://www.uat.edu/about-uat"target="_blank">History</a> </li>
-                            <li> <a href="https://www.uat.edu/campus-information"target="_blank" class="imp">Important Numbers</a> </li>
-                            <li> <a href="https://www.uat.edu/technology-university-mission"target="_blank">Mission</a> </li>
-                            <li> <a href="https://www.uat.edu/why-uat" target="_blank">Why UAT</a> </li>
-                          </ul>
-                      </div>
-                    </li>
-
-                    <li> <a href="#news">News & Events</a>
-                        <div class="dropdown">
-                          <ul class="event" style="padding-left: 0px;">
-                          <li> <a href="https://www.uat.edu/events"target="_blank">Events</a> </li>
-                          <li> <a href="https://www.uat.edu/connect-with-uat"target="_blank">Social Feeds</a> </li>
-                          <li> <a href="https://www.uattech.com/" target="_blank">UAT Tech Blog</a> </li>
-                          <li> <a href="https://www.uat.edu/campus-news-feed"target="_blank">Press</a> </li>
-                          </ul>
-                        </div>
-                    </li>
+                      </li>
                 </ul>
-            </div>
-        </div>
+              </div>
 
-        <div class="rightbox">
-            <div class="buttons">
-                <ul style="padding-left: 0px;">
+              <div cLass="rightbox">
+                <ul class="buttons">
                     <li><button type="button"> <a href="https://uatedu.sharepoint.com/SitePages/Home.aspx"target="_blank">Login</a></button> </li>
                     <li><button type="button"> <a href="https://uatfastapp.com/LPR.asp?L=284"target="_blank">Apply</a></button> </li>
                     <li><button type="button"> <a href="https://www.uat.edu/request-info" target="_blank">Request-Info</a></button> </li>
                 </ul>
-            </div>
-        </div>
+              </div>
 
     </nav>
+
 
     <main>
           <section id="showcase" class="container">
@@ -412,17 +421,17 @@
         <br>
         <br><br>
       <div class="some">
-        <a href="https://www.facebook.com/UATedu"> <img src="images/facelogo.png" alt=""> </a>
-        <a href="https://twitter.com/uatedu"> <img src="images/twitlogo.png" alt=""> </a>
-        <a href="https://www.instagram.com/uatedu/"> <img src="images/instalogo.png" alt=""> </a>
-        <a href="https://www.linkedin.com/school/university-of-advancing-technology/"> <img src="images/linklogo.png" alt=""> </a>
-        <a href="https://www.youtube.com/user/UATProductions"> <img src="images/youtubelogo.png" alt=""> </a>
-        <a href="https://m.twitch.tv/uatlive/profile"> <img src="images/twitchlogo.png" alt=""> </a>
-        <a href="https://www.snapchat.com/add/uatedu"> <img src="images/snaplogo.png" alt=""> </a>
-        <a href="https://discord.gg/QwxuJ5n"> <img src="images/dislogo.png" alt=""> </a>
-        <a href="https://www.reddit.com/r/UATedu/"> <img src="images/redlogo.png" alt=""> </a>
-        <a href="https://www.flickr.com/photos/uat/collections/"> <img src="images/fliklogo.png" alt=""> </a>
-        <a href="https://www.tiktok.com/@uatedu"> <img src="images/tiklogo.png" alt=""> </a>
+        <a href="https://www.facebook.com/UATedu" target="_blank"> <img src="images/facelogo.png" alt=""> </a>
+        <a href="https://twitter.com/uatedu" target="_blank"> <img src="images/twitlogo.png" alt=""> </a>
+        <a href="https://www.instagram.com/uatedu/" target="_blank"> <img src="images/instalogo.png" alt=""> </a>
+        <a href="https://www.linkedin.com/school/university-of-advancing-technology/" target="_blank"> <img src="images/linklogo.png" alt=""> </a>
+        <a href="https://www.youtube.com/user/UATProductions" target="_blank"> <img src="images/youtubelogo.png" alt=""> </a>
+        <a href="https://m.twitch.tv/uatlive/profile"target="_blank"> <img src="images/twitchlogo.png" alt=""> </a>
+        <a href="https://www.snapchat.com/add/uatedu"target="_blank"> <img src="images/snaplogo.png" alt=""> </a>
+        <a href="https://discord.gg/QwxuJ5n"target="_blank"> <img src="images/dislogo.png" alt=""> </a>
+        <a href="https://www.reddit.com/r/UATedu/"target="_blank"> <img src="images/redlogo.png" alt=""> </a>
+        <a href="https://www.flickr.com/photos/uat/collections/"target="_blank"> <img src="images/fliklogo.png" alt=""> </a>
+        <a href="https://www.tiktok.com/@uatedu"target="_blank"> <img src="images/tiklogo.png" alt=""> </a>
 
       </div>
       <div class="contact">
